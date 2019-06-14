@@ -13,7 +13,7 @@ class SearchBar extends StatelessWidget {
       children: <Widget>[
         Container(
           width: 240,
-          height: 35,
+          height: 40,
           decoration: BoxDecoration(
               color: Colors.black12,
               borderRadius: BorderRadius.only(
@@ -35,7 +35,7 @@ class SearchBar extends StatelessWidget {
         ),
         Container(
             width: 40,
-            height: 35,
+            height: 40,
             decoration: BoxDecoration(
                 color: Colors.deepPurpleAccent,
                 borderRadius: BorderRadius.only(

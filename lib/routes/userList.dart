@@ -15,13 +15,16 @@ class _UserListState extends State<UserListPage>
 
   var tabs = <Tab>[
     Tab(
-      text: "Tab1",
+      text: "全部",
     ),
     Tab(
-      text: "Tab2",
+      text: "全职",
     ),
     Tab(
-      text: "Tab3",
+      text: "兼职",
+    ),
+    Tab(
+      text: "实习",
     ),
   ];
 
@@ -40,7 +43,7 @@ class _UserListState extends State<UserListPage>
   Widget build(BuildContext context) {
     // TODO: implement build
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: PreferredSize(
             child: Container(
@@ -65,8 +68,8 @@ class _UserListState extends State<UserListPage>
                     ),
                   ),
                   Container(
-                    height: 50,
-                    padding: EdgeInsets.symmetric(vertical: 10),
+                    height: 60,
+                    margin: EdgeInsets.symmetric(vertical: 5),
                     child: SearchBar(onTap: _onTap, onChanged: _onChanged),
                   ),
                   Container(
@@ -82,7 +85,7 @@ class _UserListState extends State<UserListPage>
                 ],
               ),
             ),
-            preferredSize: Size(MediaQuery.of(context).size.width, 160)),
+            preferredSize: Size(MediaQuery.of(context).size.width, 180)),
         body: Column(
           children: <Widget>[
             Container(
